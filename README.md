@@ -5,8 +5,6 @@
 [![Swift Version][swift-image]][swift-url]
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 
-One to two paragraph statement about your product and what it does.
-
 ![](1.png)
 ![](2.png)
 
