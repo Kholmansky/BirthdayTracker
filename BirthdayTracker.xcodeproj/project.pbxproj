@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EAE1677206F2069006F8265 /* BirthdaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE1676206F2069006F8265 /* BirthdaysTableViewController.swift */; };
 		4418F694206DDF59000057F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4418F693206DDF59000057F7 /* AppDelegate.swift */; };
 		4418F696206DDF59000057F7 /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4418F695206DDF59000057F7 /* AddBirthdayViewController.swift */; };
 		4418F699206DDF59000057F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4418F697206DDF59000057F7 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EAE1676206F2069006F8265 /* BirthdaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysTableViewController.swift; sourceTree = "<group>"; };
 		4418F690206DDF59000057F7 /* BirthdayTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4418F693206DDF59000057F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4418F695206DDF59000057F7 /* AddBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4418F69F206DDF59000057F7 /* LaunchScreen.storyboard */,
 				4418F6A2206DDF59000057F7 /* Info.plist */,
 				4418F69A206DDF59000057F7 /* BirthdayTracker.xcdatamodeld */,
+				0EAE1676206F2069006F8265 /* BirthdaysTableViewController.swift */,
 			);
 			path = BirthdayTracker;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EAE1677206F2069006F8265 /* BirthdaysTableViewController.swift in Sources */,
 				4418F6A9206E0528000057F7 /* Birthday.swift in Sources */,
 				4418F696206DDF59000057F7 /* AddBirthdayViewController.swift in Sources */,
 				4418F69C206DDF59000057F7 /* BirthdayTracker.xcdatamodeld in Sources */,
