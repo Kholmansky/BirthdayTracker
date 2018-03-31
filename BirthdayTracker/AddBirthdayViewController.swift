@@ -7,10 +7,7 @@
 //
 
 import UIKit
-
-protocol AddBirthdayViewVontrollerDelegate {
-    func addBirthdayViewController(_ addBirthdayViewController: AddBirthdayViewController, didAddBirthday birthday: Birthday)
-}
+import CoreData
 
 class AddBirthdayViewController: UIViewController {
 	
@@ -18,8 +15,6 @@ class AddBirthdayViewController: UIViewController {
 	@IBOutlet var lastNameTextField: UITextField!
 	@IBOutlet var birthdatePicker: UIDatePicker!
     
-    var delegate: AddBirthdayViewVontrollerDelegate?
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -33,14 +28,25 @@ class AddBirthdayViewController: UIViewController {
 		let lastName = lastNameTextField.text ?? ""
 		let birthdate = birthdatePicker.date
 		
-		let newBirthday = Birthday(firstName: firstName, lastName: lastName, birthdate: birthdate)
-		
-		print("Created an entry about birthday!")
-		print("Firt Name: \(newBirthday.firstName)")
-		print ("Last Name: \(newBirthday.lastName)")
-		print("Birthday: \(newBirthday.birthdate)")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
         
-        delegate?.addBirthdayViewController(self, didAddBirthday: newBirthday)
+        let newBirthday = Birthday(context: context)
+        newBirthday.firstName = firstName
+        newBirthday.lastName = lastName
+        newBirthday.birthdate = birthdate
+        newBirthday.birthdayId = UUID().uuidString
+        
+        if let uniqueId = newBirthday.birthdayId {
+            print("birthdayId:\(uniqueId)")
+        }
+        
+        do {
+            try context.save()
+        } catch let error{
+            print("Failed to save due the error: \(error)")
+        }
+        
         dismiss(animated: true, completion: nil)
 	}
 	

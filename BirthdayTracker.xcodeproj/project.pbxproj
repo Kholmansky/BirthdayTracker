@@ -14,7 +14,6 @@
 		4418F69C206DDF59000057F7 /* BirthdayTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4418F69A206DDF59000057F7 /* BirthdayTracker.xcdatamodeld */; };
 		4418F69E206DDF59000057F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4418F69D206DDF59000057F7 /* Assets.xcassets */; };
 		4418F6A1206DDF59000057F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4418F69F206DDF59000057F7 /* LaunchScreen.storyboard */; };
-		4418F6A9206E0528000057F7 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4418F6A8206E0528000057F7 /* Birthday.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		4418F69D206DDF59000057F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4418F6A0206DDF59000057F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4418F6A2206DDF59000057F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4418F6A8206E0528000057F7 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 				4418F693206DDF59000057F7 /* AppDelegate.swift */,
 				4418F695206DDF59000057F7 /* AddBirthdayViewController.swift */,
 				4418F697206DDF59000057F7 /* Main.storyboard */,
-				4418F6A8206E0528000057F7 /* Birthday.swift */,
 				4418F69D206DDF59000057F7 /* Assets.xcassets */,
 				4418F69F206DDF59000057F7 /* LaunchScreen.storyboard */,
 				4418F6A2206DDF59000057F7 /* Info.plist */,
@@ -146,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EAE1677206F2069006F8265 /* BirthdaysTableViewController.swift in Sources */,
-				4418F6A9206E0528000057F7 /* Birthday.swift in Sources */,
 				4418F696206DDF59000057F7 /* AddBirthdayViewController.swift in Sources */,
 				4418F69C206DDF59000057F7 /* BirthdayTracker.xcdatamodeld in Sources */,
 				4418F694206DDF59000057F7 /* AppDelegate.swift in Sources */,
